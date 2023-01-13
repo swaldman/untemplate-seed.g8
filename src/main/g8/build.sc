@@ -6,9 +6,9 @@ import mill.modules.Jvm
 import mill.api.Result
 
 // huge thanks to @lolgab onn the Scala discord!
-import $file.buildCompilationSettings
+import \$file.buildCompilationSettings
 
-import $ivy.`com.mchange::untemplate-mill:$untemplate_version$`
+import \$ivy.`com.mchange::untemplate-mill:$untemplate_version$`
 import untemplate.mill._
 
 object $module;format="camel"$ extends UntemplateModule {
