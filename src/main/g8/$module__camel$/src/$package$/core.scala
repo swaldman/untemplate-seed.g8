@@ -1,5 +1,5 @@
 package $package$
 
-@main def hello() = hello_txt()
+@main def hello() = println( hello_txt() )
 
 
