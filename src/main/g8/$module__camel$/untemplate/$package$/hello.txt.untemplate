@@ -1,5 +1,21 @@
+//header block! precedes (expanded) \()[]~()>
 
+import java.time.Instant
+import java.time.format.DateTimeFormatter.RFC_1123_DATE_TIME
 
 for (i <- 0 to 20)
-(name : String = "world")[]~~~~~~~~~~~~~~~~()>
+(name : String = "world")[]~~~~~~~~~~~~~~~~()> # See long delimiters!
 <( "-" * i )>> Hello <( name )>!!!
+<-----<------------<----------<------------()
+// we were just in a text block,
+// we are back in Scala code
+
+val now = Instant.now()
+
+// going back to text now.
+//
+// the long line below is just a line of output, it is not
+// an untemplate delimiter
+()>
+------------------------------------------------------------------
+Generated for <( name )> on <( RFC_1123_DATE_TIME.format( now ) )>
