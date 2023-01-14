@@ -1,6 +1,6 @@
 //header block! precedes (expanded) \()[]~()>
 
-import java.time.Instant
+import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter.RFC_1123_DATE_TIME
 
 for (i <- 0 to 20)
@@ -10,7 +10,7 @@ for (i <- 0 to 20)
 // we were just in a text block,
 // we are back in Scala code
 
-val now = Instant.now()
+val now = ZonedDateTime.now()
 
 // going back to text now.
 //
