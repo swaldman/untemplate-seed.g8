@@ -18,7 +18,7 @@ object $module;format="camel"$ extends UntemplateModule {
   override def ammoniteVersion = "2.5.6"
 
   // we'll build an index!
-  override def untemplateIndexNameFullyQualified : Option[String] = Some("$package;format="package"$.Untemplates")
+  override def untemplateIndexNameFullyQualified : Option[String] = Some("$package;format="package"$.IndexedUntemplates")
 
   override def untemplateSelectCustomizer: untemplate.Customizer.Selector = { key =>
     var out = untemplate.Customizer.empty
