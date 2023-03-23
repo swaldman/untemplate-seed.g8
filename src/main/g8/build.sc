@@ -1,9 +1,6 @@
+
 import mill._
-import mill.define._
 import mill.scalalib._
-import mill.define.Source
-import mill.modules.Jvm
-import mill.api.Result
 
 // huge thanks to @lolgab onn the Scala discord!
 import \$file.buildCompilationSettings
@@ -26,7 +23,7 @@ object $module;format="camel"$ extends UntemplateModule {
     // to customize, examine key and modify the customer
     // with out = out.copy=...
     //
-    // e.g. out = out.copy(extraImports=Seq("$module;format="camel"$.*"))
+    // e.g. out = out.copy(extraImports=Seq("$package;format="camel"$.*"))
 
     out
   }
